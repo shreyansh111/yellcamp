@@ -9,7 +9,7 @@ var User=require("./models/user")
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
-mongoose.connect("mongodb://localhost/yelp_camp_v3")
+mongoose.connect("mongodb+srv://shreyansh___1:subbujiya@cluster0-0omil.mongodb.net/test?retryWrites=true&w=majority")
 app.use(bodyParse.urlencoded({extended:true}))
 app.set("view engine","ejs")
 var Campground=require("./models/campground")
