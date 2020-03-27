@@ -12,7 +12,7 @@ router.get("/",function(req,res){
 			console.log(err)
 		}
 		else{
-			res.render("campground/index",{campgrounds:allCampground,});
+			res.render("campground/index",{campgrounds:allCampground});
 		}
 	})
 	//res.render("campground",{campgrounds:campgrounds})
