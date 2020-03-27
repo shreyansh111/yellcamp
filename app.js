@@ -48,6 +48,7 @@ app.use("/campground",campgroundRoutes);
 app.use("/campground/:id/comments",commentRoutes);
 app.use("/campgrounds/:id/reviews", reviewRoutes);
 
-app.listen(3000,function(){
-	console.log("yellcamp has started")
-})
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+  console.log("Server Has Started!");
+});
