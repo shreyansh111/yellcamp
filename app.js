@@ -9,7 +9,7 @@ var User=require("./models/user")
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
-mongoose.connect("mongodb+srv://shreyansh__1:subbujiya@cluster0-x4b2y.mongodb.net/test?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://shreyansh:subbu@yellcamp-0glus.gcp.mongodb.net/test?retryWrites=true&w=majority")
 app.use(bodyParse.urlencoded({extended:true}))
 app.set("view engine","ejs")
 var Campground=require("./models/campground")
